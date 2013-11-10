@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="gender_spinner">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    
+    <string-array name="duel_request_life_span">
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>9 hours</item>
+        <item>12 hours</item>
+        <item>1 day</item>
+    </string-array>
+    
+    <string-array name="duel_request_timeout">
+        <item>1 minute</item>
+        <item>3 minutes</item>
+        <item>5 minutes</item>
+    </string-array>
+    
+    <string-array name="request_former_test">
+        <item>getPlayerChar()</item>
+        <item>getAnyChar(String name)</item>
+        <item>movePlayerTo(LocationType location)</item>
+        <item>getDuelRequestList()</item>
+        <item>registerDuelRequest()</item>
+        <item>removeDuelRequest()</item>
+        <item>removeFromDuelRequest()</item>
+        <item>addPlayerToDuelRequest(String owner)</item>
+        <item>fightAttack(Object&#8230; objects)</item>
+    </string-array>
+
+</resources>

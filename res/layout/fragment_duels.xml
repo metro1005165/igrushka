@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top_container"
+        android:layout_width="600dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/post_request_border" >
+
+        <TextView
+            android:id="@+id/tv_duel_request_span"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Duration:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/sp_duel_request_span"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/tv_duel_request_span"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/tv_duel_request_span"
+            android:entries="@array/duel_request_life_span" />
+
+        <TextView
+            android:id="@+id/tv_duel_request_timeout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_duel_request_span"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/sp_duel_request_span"
+            android:text="Timeout: "
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/sp_duel_request_timeout"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/tv_duel_request_span"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/tv_duel_request_timeout"
+            android:entries="@array/duel_request_timeout" />
+
+        <Button
+            android:id="@+id/btn_post_duel_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_toRightOf="@+id/sp_duel_request_timeout"
+            android:background="@drawable/post_duel"
+            android:text="Post Duel Request"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!--         android:focusable="false" -->
+<!--         android:focusableInTouchMode="false" -->
+    <ListView
+        android:id="@+id/lv_duel_requests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_container"
+        android:listSelector="@color/Transparent"
+        android:layout_margin="10dp"
+        android:background="@drawable/super_frame" />
+
+</RelativeLayout>

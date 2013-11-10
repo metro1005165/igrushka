@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sv_char_select"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_char_select_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/orc"
+            android:contentDescription="@string/hello_world" />
+
+        <TextView
+            android:id="@+id/tv_char_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_char_select_image"
+            android:layout_toRightOf="@+id/iv_char_select_image"
+            android:text="@string/char_desc" />
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_char_description"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/iv_char_select_image"
+            android:text="@string/gender"
+            android:textColor="@color/Red"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/gender_spinner"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/tv_gender"
+            android:layout_toRightOf="@+id/tv_gender"
+            android:entries="@array/gender_spinner"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/btn_select_char"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/tv_gender"
+            android:layout_toRightOf="@+id/gender_spinner"
+            android:text="@string/select_char" />
+    </RelativeLayout>
+
+</ScrollView>

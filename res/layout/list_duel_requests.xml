@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp" >
+
+    <TextView
+        android:id="@+id/tv_duel_request_post_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:text="02:14:34"
+        android:textColor="@color/Green"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/separator_1"
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_duel_request_post_time"
+        android:background="@color/LightGrey" />
+
+    <ImageView
+        android:id="@+id/iv_duel_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/separator_1"
+        android:background="@drawable/duel" />
+
+    <View
+        android:id="@+id/separator_2"
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_duel_icon"
+        android:background="@color/LightGrey" />
+
+    <TextView
+        android:id="@+id/tv_timeout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="18sp" 
+        android:layout_toRightOf="@+id/separator_2"
+        android:text="Timeout" />
+
+    <View
+        android:id="@+id/separator_3"
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_timeout"
+        android:background="@color/LightGrey" 
+        />
+
+    <TextView
+        android:id="@+id/tv_duel_life_span"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/separator_3"
+        android:text="Life Span" 
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/separator_4"
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_duel_life_span"
+        android:background="@color/LightGrey" />
+
+    <TextView
+        android:id="@+id/tv_name_and_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/separator_4"
+        android:text="Name [level]"
+        android:textColor="@color/Red"
+        android:textStyle="bold" 
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/iv_check_player_stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/tv_name_and_level"
+        android:background="@drawable/selector_question"
+        android:contentDescription="@string/char_desc" />
+
+    <View
+        android:id="@+id/separator_5"
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_check_player_stats"
+        android:background="@color/LightGrey" />
+
+    <ImageView
+        android:id="@+id/iv_accept_duel_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/separator_5"
+        android:background="@drawable/accept"
+        android:contentDescription="@string/char_desc" />
+    
+    <View
+        android:id="@+id/separator_6"
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_accept_duel_request"
+        android:background="@color/LightGrey"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/iv_remove_duel_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/separator_6"
+        android:background="@drawable/selector"
+        android:contentDescription="@string/char_desc"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_location_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/training_room"
+        android:contentDescription="@string/char_desc" />
+
+    <TextView
+        android:id="@+id/tv_location_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/iv_location_icon"
+        android:textColor="@color/Blue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_location_description"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv_location_name"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/iv_move_to"
+        android:layout_toRightOf="@+id/iv_location_icon"
+        android:text="@string/loren_ipsum"
+        android:textSize="14sp"
+        android:textStyle="italic|bold" />
+
+    <ImageView
+        android:id="@+id/iv_move_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/move_to"
+        android:contentDescription="@string/char_desc" />
+
+</RelativeLayout>

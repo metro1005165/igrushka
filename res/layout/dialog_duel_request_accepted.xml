@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="400dp"
+    android:background="@drawable/dialog_frame" >
+
+    
+     <ImageView
+        android:id="@+id/iv_chose_your_destiny"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/duel_dialog_image"/>
+     
+    <TextView
+        android:id="@+id/tv_challenger_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_chose_your_destiny"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Player X accepted your duel request"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_ready_to_fight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_challenger_info"
+        android:layout_centerHorizontal="true"
+        android:text="Do you wish to fight him?"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_ready_to_fight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:text="Yes"
+        android:textColor="@color/White"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_decline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_accept"
+        android:layout_below="@+id/tv_ready_to_fight"
+        android:layout_toRightOf="@+id/btn_accept"
+        android:background="@drawable/button"
+        android:layout_marginLeft="20dp"
+        android:text="No"
+        android:textColor="@color/White"
+        android:textStyle="bold" />
+
+</RelativeLayout>

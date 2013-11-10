@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:components="http://schemas.android.com/apk/res/com.yuri.game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <!-- Left Block -->
+
+    <RelativeLayout
+        android:id="@+id/left_block"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".35"
+        android:background="@color/Yellow" >
+
+        <TextView
+            android:id="@+id/tv_name_and_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="Name [level]" />
+
+        <com.yuri.game.utils.HpBar
+            android:id="@+id/player_hp_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="300dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/tv_name_and_level"
+            android:layout_centerHorizontal="true"
+            android:max="100"
+            android:maxHeight="20dp"
+            android:minHeight="20dp"
+            android:progress="100"
+            android:progressDrawable="@drawable/progressbar"
+            components:text="[64/64]"
+            components:textColor="@android:color/black"
+            components:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/player_char_image"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_below="@+id/player_hp_bar"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/orc"
+            android:contentDescription="bla" />
+    </RelativeLayout>
+
+    <!-- Left Block End -->
+
+
+    <!-- Middle Block -->
+
+    <RelativeLayout
+        android:id="@+id/middle_block"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".30"
+        android:background="@color/Pink" >
+
+        <TextView
+            android:id="@+id/tv_general_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="General Stats"
+            android:textColor="@color/Red"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_strength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_general_stats"
+            android:layout_marginTop="10dp"
+            android:text="Strength: " />
+
+        <TextView
+            android:id="@+id/tv_agility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_strength"
+            android:layout_marginTop="10dp"
+            android:text="Agility: " />
+
+        <TextView
+            android:id="@+id/tv_luck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_agility"
+            android:layout_marginTop="10dp"
+            android:text="Luck: " />
+
+        <TextView
+            android:id="@+id/tv_toughness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_luck"
+            android:layout_marginTop="10dp"
+            android:text="Toughness: " />
+
+        <TextView
+            android:id="@+id/tv_battle_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_toughness"
+            android:layout_marginTop="20dp"
+            android:text="Battle Stats"
+            android:textColor="@color/Blue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_critical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_battle_stats"
+            android:layout_marginTop="10dp"
+            android:text="Critical: " />
+
+        <TextView
+            android:id="@+id/tv_anticritical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_critical"
+            android:layout_marginTop="10dp"
+            android:text="Anticritical: " />
+
+        <TextView
+            android:id="@+id/tv_dodge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_anticritical"
+            android:layout_marginTop="10dp"
+            android:text="Dodge: " />
+
+        <TextView
+            android:id="@+id/tv_antidodge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_dodge"
+            android:layout_marginTop="10dp"
+            android:text="Antidodge: " />
+
+        <TextView
+            android:id="@+id/tv_armor_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_antidodge"
+            android:layout_marginTop="20dp"
+            android:text="Armor Stats"
+            android:textColor="@color/Green"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_head_armor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_armor_stats"
+            android:layout_marginTop="10dp"
+            android:text="Head Armor: " />
+
+        <TextView
+            android:id="@+id/tv_chest_armor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_head_armor"
+            android:layout_marginTop="10dp"
+            android:text="Chest Armor: " />
+
+        <TextView
+            android:id="@+id/tv_abdomen_armor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_chest_armor"
+            android:layout_marginTop="10dp"
+            android:text="Abdomen Armor: " />
+
+        <TextView
+            android:id="@+id/tv_leg_armor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_abdomen_armor"
+            android:layout_marginTop="10dp"
+            android:text="Leg Armor: " />
+    </RelativeLayout>
+    <!-- Middle Block End -->
+
+
+    <!-- Right Block -->
+
+    <RelativeLayout
+        android:id="@+id/right_block"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".35"
+        android:background="@color/LightGreen" >
+
+        <TextView
+            android:id="@+id/tv_location_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Location: "
+            android:textColor="@color/Purple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/lv_location_player_list"
+            android:layout_width="wrap_content"
+            android:stackFromBottom="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:listSelector="@color/Transparent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_location_name" />
+    </RelativeLayout>
+    <!-- Right Block End -->
+
+</LinearLayout>
